@@ -25,8 +25,8 @@ public class Customer implements Serializable
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     @Column (nullable = false)
-    public Integer customerId;
+    private Integer customerId;
     @Column (nullable = false)
-    public String customerName;
-    public String address;
+    private String customerName;
+    private String address;
 }
